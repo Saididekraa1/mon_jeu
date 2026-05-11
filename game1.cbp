@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/game1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../SFML-3.0.0-windows-gcc-14.2.0-mingw-64-bit/SFML-3.0.0/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lstdc++" />
+					<Add option="-lgcc" />
+					<Add library="../../SFML-3.0.0-windows-gcc-14.2.0-mingw-64-bit/SFML-3.0.0/lib/libsfml-graphics.a" />
+					<Add library="../../SFML-3.0.0-windows-gcc-14.2.0-mingw-64-bit/SFML-3.0.0/lib/libsfml-window.a" />
+					<Add library="../../SFML-3.0.0-windows-gcc-14.2.0-mingw-64-bit/SFML-3.0.0/lib/libsfml-system.a" />
+					<Add directory="../../SFML-3.0.0-windows-gcc-14.2.0-mingw-64-bit/SFML-3.0.0/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/game1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="../../SFML-3.0.0-windows-gcc-14.2.0-mingw-64-bit/SFML-3.0.0/lib/libsfml-audio.a" />
+		</Linker>
+		<Unit filename="jeu_page.hpp" />
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="parametres.hpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
